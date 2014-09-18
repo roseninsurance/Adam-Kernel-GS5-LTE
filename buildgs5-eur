@@ -1,0 +1,10 @@
+echo "make clean"
+make clean
+echo "export ARCH=arm"
+export ARCH=arm
+echo "msm8974_wanam_defconfig VARIANT_DEFCONFIG=msm8974pro_sec_klte_eur_defconfig SELINUX_DEFCONFIG=selinux_defconfig"
+make msm8974_wanam_defconfig VARIANT_DEFCONFIG=msm8974pro_sec_klte_eur_defconfig SELINUX_DEFCONFIG=selinux_defconfig
+echo "make -j2"
+make
+echo "Done!"
+
