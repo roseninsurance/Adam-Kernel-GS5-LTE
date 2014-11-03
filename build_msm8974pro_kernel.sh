@@ -5,7 +5,7 @@ BUILD_TOP_DIR=..
 BUILD_KERNEL_DIR=$(pwd)
 
 SECURE_SCRIPT=$BUILD_TOP_DIR/../buildscript/tools/signclient.jar
-BUILD_CROSS_COMPILE=../prebuilts/gcc/linux-x86/arm/arm-eabi-4.7/bin/arm-eabi-
+BUILD_CROSS_COMPILE=/home/wanam/dev/toolchains/arm-eabi-4.7/bin/arm-eabi-
 BUILD_JOB_NUMBER=`grep processor /proc/cpuinfo|wc -l`
 
 # Default Python version is 2.7
@@ -13,7 +13,7 @@ mkdir -p bin
 ln -sf /usr/bin/python2.7 ./bin/python
 export PATH=$(pwd)/bin:$PATH
 
-KERNEL_DEFCONFIG=msm8974_sec_defconfig
+KERNEL_DEFCONFIG=msm8974_wanam_defconfig
 DEBUG_DEFCONFIG=msm8974_sec_eng_defconfig
 SELINUX_DEFCONFIG=selinux_defconfig
 SELINUX_LOG_DEFCONFIG=selinux_log_defconfig
