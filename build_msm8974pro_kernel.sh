@@ -5,7 +5,7 @@ BUILD_TOP_DIR=..
 BUILD_KERNEL_DIR=$(pwd)
 
 SECURE_SCRIPT=$BUILD_TOP_DIR/../buildscript/tools/signclient.jar
-BUILD_CROSS_COMPILE=/home/wanam/dev/toolchains/arm-eabi-4.7/bin/arm-eabi-
+BUILD_CROSS_COMPILE=/home/wanam/dev/toolchains/arm-eabi-4.8/bin/arm-eabi-
 BUILD_JOB_NUMBER=`grep processor /proc/cpuinfo|wc -l`
 
 # Default Python version is 2.7
@@ -68,7 +68,7 @@ VARIANT=k${CARRIER}
 DTS_NAMES=msm8974pro-ac-sec-k-
 #DTS_NAMES=msm8974pro-ac-sec
 PROJECT_NAME=${VARIANT}
-VARIANT_DEFCONFIG=msm8974pro_sec_${MODEL}_${CARRIER}_defconfig
+VARIANT_DEFCONFIG=msm8974pro_sec_klte_eur_defconfig
 
 CERTIFICATION=NONCERT
 
